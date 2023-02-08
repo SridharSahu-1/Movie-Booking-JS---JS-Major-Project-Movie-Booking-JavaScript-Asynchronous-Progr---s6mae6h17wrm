@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-
-
-
-
-
 .d-none{
     display: none;
 }
@@ -16,3 +11,107 @@
     visibility: hidden;
 }
 
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    padding: 12px 16px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+nav ul{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: whitesmoke;
+}
+#main{
+    margin: 3rem 0;
+}
+.movie-holder{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.movie-img-wrapper{
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+}
+
+#booker-grid-holder{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+    gap: 2rem;
+    align-items: center;
+    margin: 1rem 0;
+
+}
+.booking-grid{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+}
+#booker{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.available-seat{
+    background-color: green;
+    cursor: pointer;
+}
+.unavailable-seat{
+    background-color: red;
+    cursor: not-allowed;
+}
+.seat{
+    color: white;
+    /* padding: 2rem;*/
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.selected-seat{
+    border: 4px outset rgb(0, 0, 0);
+}
+
+#Success{
+    text-align: center;
+}
+#confirm-purchase{
+    display: grid;
+    justify-content: center;
+    gap: 5px;
+}
+
+.form-group{
+    margin: 1rem 0;
+}
